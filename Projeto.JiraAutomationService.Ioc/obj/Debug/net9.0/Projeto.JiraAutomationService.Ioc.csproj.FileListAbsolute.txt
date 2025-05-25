@@ -1,0 +1,17 @@
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\bin\Debug\net9.0\Projeto.JiraAutomationService.Ioc.deps.json
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\bin\Debug\net9.0\Projeto.JiraAutomationService.Ioc.dll
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\bin\Debug\net9.0\Projeto.JiraAutomationService.Ioc.pdb
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\obj\Debug\net9.0\Projeto.JiraAutomationService.Ioc.csproj.AssemblyReference.cache
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\obj\Debug\net9.0\Projeto.JiraAutomationService.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\obj\Debug\net9.0\Projeto.JiraAutomationService.Ioc.AssemblyInfoInputs.cache
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\obj\Debug\net9.0\Projeto.JiraAutomationService.Ioc.AssemblyInfo.cs
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\obj\Debug\net9.0\Projeto.JiraAutomationService.Ioc.csproj.CoreCompileInputs.cache
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\obj\Debug\net9.0\Projeto.JiraAutomationService.Ioc.dll
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\obj\Debug\net9.0\refint\Projeto.JiraAutomationService.Ioc.dll
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\obj\Debug\net9.0\Projeto.JiraAutomationService.Ioc.pdb
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\obj\Debug\net9.0\ref\Projeto.JiraAutomationService.Ioc.dll
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\bin\Debug\net9.0\Projeto.JiraAutomationService.Dominio.dll
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\bin\Debug\net9.0\Projeto.JiraAutomationService.Infra.dll
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\bin\Debug\net9.0\Projeto.JiraAutomationService.Infra.pdb
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\bin\Debug\net9.0\Projeto.JiraAutomationService.Dominio.pdb
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Ioc\obj\Debug\net9.0\Projeto..588AE91C.Up2Date

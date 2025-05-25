@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="Options\**" />
+        <EmbeddedResource Remove="Options\**" />
+        <None Remove="Options\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Projeto.JiraAutomationService.Dominio\Projeto.JiraAutomationService.Dominio.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Jira\Servicos\Interfaces\" />
+    </ItemGroup>
+</Project>

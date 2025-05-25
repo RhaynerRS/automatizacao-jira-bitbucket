@@ -1,0 +1,15 @@
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\bin\Debug\net9.0\Projeto.JiraAutomationService.Infra.deps.json
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\bin\Debug\net9.0\Projeto.JiraAutomationService.Infra.dll
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\bin\Debug\net9.0\Projeto.JiraAutomationService.Infra.pdb
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\bin\Debug\net9.0\Projeto.JiraAutomationService.Dominio.dll
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\bin\Debug\net9.0\Projeto.JiraAutomationService.Dominio.pdb
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\obj\Debug\net9.0\Projeto.JiraAutomationService.Infra.csproj.AssemblyReference.cache
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\obj\Debug\net9.0\Projeto.JiraAutomationService.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\obj\Debug\net9.0\Projeto.JiraAutomationService.Infra.AssemblyInfoInputs.cache
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\obj\Debug\net9.0\Projeto.JiraAutomationService.Infra.AssemblyInfo.cs
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\obj\Debug\net9.0\Projeto.JiraAutomationService.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\obj\Debug\net9.0\Projeto..7303E9AD.Up2Date
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\obj\Debug\net9.0\Projeto.JiraAutomationService.Infra.dll
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\obj\Debug\net9.0\refint\Projeto.JiraAutomationService.Infra.dll
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\obj\Debug\net9.0\Projeto.JiraAutomationService.Infra.pdb
+C:\Users\Rhayner\RiderProjects\Projeto.JiraAutomationService.Api\Projeto.JiraAutomationService.Infra\obj\Debug\net9.0\ref\Projeto.JiraAutomationService.Infra.dll

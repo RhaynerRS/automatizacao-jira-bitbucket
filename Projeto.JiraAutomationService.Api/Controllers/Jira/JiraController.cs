@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Projeto.JiraAutomationService.Aplicacao.Jira.Servicos.Interfaces;
+using Projeto.JiraAutomationService.DataTransfer.Jira.Request;
 using Projeto.JiraAutomationService.Dominio.Jira.Repositorios;
 using Projeto.JiraAutomationService.Dominio.Jira.Servicos.Interfaces;
 
@@ -13,57 +15,31 @@ namespace Projeto.JiraAutomationService.Api.Controllers.Jira
     [Route("api/jira")]
     public class JiraController : Controller
     {
-        private readonly IJiraServico _repository;
-        public JiraController(IJiraServico repository)
+        private readonly IJiraAppServico jiraServico;
+        public JiraController(IJiraAppServico jiraServico)
         {
-            _repository = repository;
+            this.jiraServico = jiraServico;
         }
 
         [HttpPost("pullrequest")]
         public async Task<ActionResult> AcaoPullRequestAsync([FromBody]object issueKey)
         {
-            var eventKey = HttpContext.Request.Headers["X-Event-Key"].FirstOrDefault();
+            await jiraServico.AcaoPullRequestAsync(issueKey);
 
-            if (string.IsNullOrEmpty(eventKey))
-            {
-                return BadRequest("Missing X-Event-Key header");
-            }
-            
-            JsonElement element = (JsonElement)issueKey;
-            
-            var doc = JObject.Parse(element.GetRawText());
-
-            var response = await _repository.ConverteReponseBitbucket(eventKey, doc);
-            await this._repository.PullRequestMoverCardJira(eventKey,response);
-
-            return Ok(issueKey);
+            return Ok();
         }
         
         [HttpPost("branch")]
         public async Task<ActionResult> AcaoBranchAsync([FromBody]object issueKey)
         {
-            var eventKey = HttpContext.Request.Headers["X-Event-Key"].FirstOrDefault();
-
-            if (string.IsNullOrEmpty(eventKey))
-            {
-                return BadRequest("Missing X-Event-Key header");
-            }
-            
-            JsonElement element = (JsonElement)issueKey;
-            
-            var doc = JObject.Parse(element.GetRawText());
-
-            var response = await _repository.ConverteReponseBitbucket(eventKey, doc);
-            await this._repository.PullRequestMoverCardJira(eventKey,response);
-
             return Ok(issueKey);
         }
 
 
         [HttpPost]
-        public async Task<ActionResult> CadastraRepositorio([FromQuery]string issueKey)
+        public async Task<ActionResult> CadastraRepositorio([FromBody]RepositorioCriarRequest request)
         {
-            return Ok();
+            return Ok(await jiraServico.CadastreRepositorio(request));
         }
     }
 }

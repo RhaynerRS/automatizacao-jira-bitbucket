@@ -5,13 +5,15 @@ using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
+using Projeto.JiraAutomationService.Aplicacao.Jira.Servicos;
 using Projeto.JiraAutomationService.Dominio.Jira.Entidades;
 using Projeto.JiraAutomationService.Dominio.Jira.Repositorios;
 using Projeto.JiraAutomationService.Dominio.Jira.Servicos;
 using Projeto.JiraAutomationService.Dominio.Jira.Servicos.Interfaces;
 using Projeto.JiraAutomationService.Infra.Jira.Repositorios;
+using Projeto.JiraAutomationService.Ioc.Confiuracoes;
 
-namespace LocacaoApp.AuthService.IOC
+namespace Projeto.JiraAutomationService.Ioc
 {
     public static class NativeInjectorBoostraper
     {
@@ -19,10 +21,11 @@ namespace LocacaoApp.AuthService.IOC
         {
 
             services.AddHttpContextAccessor();
-
+            services.AddMongoDb(configuration);
             BsonSerializer.RegisterSerializer(new GuidSerializer(GuidRepresentation.Standard));
             services.AddServicesFromAssembly(typeof(PullRequest).Assembly);
             services.AddServicesFromAssembly(typeof(IPullRequestRepositorio).Assembly);
+            services.AddServicesFromAssembly(typeof(JiraAppServico).Assembly);
             services.AddServicesFromAssembly(typeof(JiraRepositorio).Assembly);
             services.AddScoped<IPullRequestRepositorio, PullRequestCriarRepositorio>();
             services.AddScoped<IJiraServico, JiraServico>();

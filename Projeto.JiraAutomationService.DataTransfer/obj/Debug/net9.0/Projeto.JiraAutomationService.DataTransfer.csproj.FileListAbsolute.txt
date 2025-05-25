@@ -1,0 +1,16 @@
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\bin\Debug\net9.0\Projeto.JiraAutomationService.DataTransfer.deps.json
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\bin\Debug\net9.0\Projeto.JiraAutomationService.DataTransfer.dll
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\bin\Debug\net9.0\Projeto.JiraAutomationService.DataTransfer.pdb
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\bin\Debug\net9.0\Projeto.JiraAutomationService.Dominio.dll
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\bin\Debug\net9.0\Projeto.JiraAutomationService.Dominio.pdb
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\obj\Debug\net9.0\Projeto.JiraAutomationService.DataTransfer.csproj.AssemblyReference.cache
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\obj\Debug\net9.0\Projeto.JiraAutomationService.DataTransfer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\obj\Debug\net9.0\Projeto.JiraAutomationService.DataTransfer.AssemblyInfoInputs.cache
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\obj\Debug\net9.0\Projeto.JiraAutomationService.DataTransfer.AssemblyInfo.cs
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\obj\Debug\net9.0\Projeto.JiraAutomationService.DataTransfer.csproj.CoreCompileInputs.cache
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\obj\Debug\net9.0\Projeto.JiraAutomationService.DataTransfer.sourcelink.json
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\obj\Debug\net9.0\Projeto..3AED7A0F.Up2Date
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\obj\Debug\net9.0\Projeto.JiraAutomationService.DataTransfer.dll
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\obj\Debug\net9.0\refint\Projeto.JiraAutomationService.DataTransfer.dll
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\obj\Debug\net9.0\Projeto.JiraAutomationService.DataTransfer.pdb
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.DataTransfer\obj\Debug\net9.0\ref\Projeto.JiraAutomationService.DataTransfer.dll

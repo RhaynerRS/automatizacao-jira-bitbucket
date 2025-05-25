@@ -13,6 +13,15 @@ public class JiraServico:IJiraServico
         this.jiraRepositorio = jiraRepositorio;
     }
 
+    public async Task<Repositorio> InserirAsync(string nome, string idCampoReview, string idCampoRelease, string idCampoDone, CancellationToken cancellationToken = default)
+    {
+        Repositorio repositorio = new(nome,idCampoReview,idCampoRelease,idCampoDone);
+        
+        await jiraRepositorio.InserirAsync(repositorio, cancellationToken);
+        
+        return repositorio;
+    }
+
     public async Task PullRequestMoverCardJira(string acao, PullRequest pullRequest)
     {
         IPullRequestRepositorio repositorio = jiraRepositorio.FactoryPullRequestRepositorio(acao);

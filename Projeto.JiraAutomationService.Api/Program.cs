@@ -1,5 +1,5 @@
-using LocacaoApp.AuthService.IOC;
 using Microsoft.AspNetCore.Authentication;
+using Projeto.JiraAutomationService.Ioc;
 
 namespace Projeto.JiraAutomationService.API
 {

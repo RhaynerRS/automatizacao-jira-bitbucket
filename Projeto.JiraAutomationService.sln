@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.JiraAutomationServi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.JiraAutomationService.Aplicacao", "Projeto.JiraAutomationService.Aplicacao\Projeto.JiraAutomationService.Aplicacao.csproj", "{DF811792-9EAC-45C0-B58E-3EA6ED45D936}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.JiraAutomationService.DataTransfer", "Projeto.JiraAutomationService.DataTransfer\Projeto.JiraAutomationService.DataTransfer.csproj", "{DE458EDF-F96E-49EF-9C16-C1A47366462F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{DF811792-9EAC-45C0-B58E-3EA6ED45D936}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF811792-9EAC-45C0-B58E-3EA6ED45D936}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF811792-9EAC-45C0-B58E-3EA6ED45D936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE458EDF-F96E-49EF-9C16-C1A47366462F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE458EDF-F96E-49EF-9C16-C1A47366462F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE458EDF-F96E-49EF-9C16-C1A47366462F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE458EDF-F96E-49EF-9C16-C1A47366462F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

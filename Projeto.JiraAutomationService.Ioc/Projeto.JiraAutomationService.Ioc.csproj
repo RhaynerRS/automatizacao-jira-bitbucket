@@ -25,6 +25,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Projeto.JiraAutomationService.Aplicacao\Projeto.JiraAutomationService.Aplicacao.csproj" />
       <ProjectReference Include="..\Projeto.JiraAutomationService.Infra\Projeto.JiraAutomationService.Infra.csproj" />
     </ItemGroup>
 

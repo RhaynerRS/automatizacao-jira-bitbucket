@@ -997,6 +997,41 @@
           "lib/net7.0/ZstdSharp.dll": {}
         }
       },
+      "Projeto.JiraAutomationService.Aplicacao/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Projeto.JiraAutomationService.DataTransfer": "1.0.0",
+          "Projeto.JiraAutomationService.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Projeto.JiraAutomationService.Aplicacao.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Projeto.JiraAutomationService.Aplicacao.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Projeto.JiraAutomationService.DataTransfer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "Projeto.JiraAutomationService.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Projeto.JiraAutomationService.DataTransfer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Projeto.JiraAutomationService.DataTransfer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Projeto.JiraAutomationService.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1014,6 +1049,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "MongoDB.Driver": "3.3.0",
           "Newtonsoft.Json": "13.0.3",
           "Projeto.JiraAutomationService.Dominio": "1.0.0"
         },
@@ -1036,6 +1072,7 @@
           "Microsoft.Extensions.Configuration": "9.0.4",
           "Microsoft.Extensions.DependencyInjection": "9.0.4",
           "MongoDB.Driver": "3.3.0",
+          "Projeto.JiraAutomationService.Aplicacao": "1.0.0",
           "Projeto.JiraAutomationService.Infra": "1.0.0"
         },
         "compile": {
@@ -2718,6 +2755,16 @@
         "zstdsharp.port.nuspec"
       ]
     },
+    "Projeto.JiraAutomationService.Aplicacao/1.0.0": {
+      "type": "project",
+      "path": "../Projeto.JiraAutomationService.Aplicacao/Projeto.JiraAutomationService.Aplicacao.csproj",
+      "msbuildProject": "../Projeto.JiraAutomationService.Aplicacao/Projeto.JiraAutomationService.Aplicacao.csproj"
+    },
+    "Projeto.JiraAutomationService.DataTransfer/1.0.0": {
+      "type": "project",
+      "path": "../Projeto.JiraAutomationService.DataTransfer/Projeto.JiraAutomationService.DataTransfer.csproj",
+      "msbuildProject": "../Projeto.JiraAutomationService.DataTransfer/Projeto.JiraAutomationService.DataTransfer.csproj"
+    },
     "Projeto.JiraAutomationService.Dominio/1.0.0": {
       "type": "project",
       "path": "../Projeto.JiraAutomationService.Dominio/Projeto.JiraAutomationService.Dominio.csproj",
@@ -2739,6 +2786,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.15",
       "Microsoft.AspNetCore.OpenApi >= 8.0.0",
       "Newtonsoft.Json >= 13.0.3",
+      "Projeto.JiraAutomationService.Aplicacao >= 1.0.0",
       "Projeto.JiraAutomationService.Dominio >= 1.0.0",
       "Projeto.JiraAutomationService.Ioc >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -2776,6 +2824,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\Rhayner\\Projetos\\automatizacao-jira-bitbucket\\Projeto.JiraAutomationService.Aplicacao\\Projeto.JiraAutomationService.Aplicacao.csproj": {
+              "projectPath": "C:\\Users\\Rhayner\\Projetos\\automatizacao-jira-bitbucket\\Projeto.JiraAutomationService.Aplicacao\\Projeto.JiraAutomationService.Aplicacao.csproj"
+            },
             "C:\\Users\\Rhayner\\Projetos\\automatizacao-jira-bitbucket\\Projeto.JiraAutomationService.Dominio\\Projeto.JiraAutomationService.Dominio.csproj": {
               "projectPath": "C:\\Users\\Rhayner\\Projetos\\automatizacao-jira-bitbucket\\Projeto.JiraAutomationService.Dominio\\Projeto.JiraAutomationService.Dominio.csproj"
             },

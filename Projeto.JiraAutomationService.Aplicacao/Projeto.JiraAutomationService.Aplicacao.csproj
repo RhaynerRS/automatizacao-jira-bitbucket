@@ -16,14 +16,11 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\Projeto.JiraAutomationService.DataTransfer\Projeto.JiraAutomationService.DataTransfer.csproj" />
         <ProjectReference Include="..\Projeto.JiraAutomationService.Dominio\Projeto.JiraAutomationService.Dominio.csproj" />
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Jira\Servicos\Interfaces\" />
     </ItemGroup>
 </Project>

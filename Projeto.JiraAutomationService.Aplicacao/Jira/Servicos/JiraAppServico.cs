@@ -5,40 +5,41 @@ using Projeto.JiraAutomationService.Aplicacao.Jira.Servicos.Interfaces;
 using Projeto.JiraAutomationService.DataTransfer.Jira.Request;
 using Projeto.JiraAutomationService.Dominio.Jira.Entidades;
 using Projeto.JiraAutomationService.Dominio.Jira.Servicos.Interfaces;
+using Projeto.JiraAutomationService.Dominio.WebhookGit.Entidades;
+using Projeto.JiraAutomationService.Dominio.WebhookGit.Servicos.Interfaces;
 
 namespace Projeto.JiraAutomationService.Aplicacao.Jira.Servicos
 {
     public class JiraAppServico: IJiraAppServico
     {
         private readonly IHttpContextAccessor httpContextAccessor;
+        private readonly IWebhookGitServico webhookGitServico;
         private readonly IJiraServico jiraServico;
         
-        public JiraAppServico(IHttpContextAccessor httpContextAccessor, IJiraServico jiraServico)
+        public JiraAppServico(IHttpContextAccessor httpContextAccessor, IJiraServico jiraServico, IWebhookGitServico webhookGitServico)
         {
             this.httpContextAccessor = httpContextAccessor;
             this.jiraServico = jiraServico;
+            this.webhookGitServico = webhookGitServico;
         }
         
         public async Task AcaoPullRequestAsync(object payload)
         {
-            var eventKey = httpContextAccessor.HttpContext.Request.Headers["X-Event-Key"].FirstOrDefault();
-
-            if (string.IsNullOrEmpty(eventKey))
-            {
-                throw new Exception("Não foi possivel consultar o evento");
-            }
+            var headers = httpContextAccessor.HttpContext.Request.Headers;
             
             JsonElement element = (JsonElement)payload;
             
             var doc = JObject.Parse(element.GetRawText());
 
-            var response = await jiraServico.ConverteReponseBitbucket(eventKey, doc);
-            await jiraServico.PullRequestMoverCardJira(eventKey,response);
+            WebhookRequisicao webhookRequisicao = webhookGitServico.CriarEntidadeWebhook(headers, doc);
+
+            var response = await jiraServico.ConvertePayload(webhookRequisicao, doc);
+            await jiraServico.MoverCardJira(webhookRequisicao,response);
         }
 
-        public async Task<Repositorio> CadastreRepositorio(RepositorioCriarRequest request, CancellationToken cancellationToken = default)
+        public async Task<Board> CadastreRepositorio(RepositorioCriarRequest request, CancellationToken cancellationToken = default)
         {
-            return await jiraServico.InserirAsync(request.Nome, request.IdCampoReview, request.IdCampoRelease, request.IdCampoDone,cancellationToken);
+            return await jiraServico.InserirAsync(request.Nome, request.TagJira, request.UrlJira, request.IdCampoReview, request.IdCampoRelease, request.IdCampoAguardandoRelease, request.IdCampoDone,cancellationToken);
         }
     }
 }

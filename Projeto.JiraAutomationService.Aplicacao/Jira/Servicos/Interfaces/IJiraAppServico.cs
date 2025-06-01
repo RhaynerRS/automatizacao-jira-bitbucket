@@ -7,6 +7,6 @@ public interface IJiraAppServico
 {
     public Task AcaoPullRequestAsync(object payload);
 
-    public Task<Repositorio> CadastreRepositorio(RepositorioCriarRequest request,
+    public Task<Board> CadastreRepositorio(RepositorioCriarRequest request,
         CancellationToken cancellationToken = default);
 }

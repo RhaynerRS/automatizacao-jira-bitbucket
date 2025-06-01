@@ -2,10 +2,11 @@
 using Projeto.JiraAutomationService.Dominio.Jira.Entidades;
 using Projeto.JiraAutomationService.Dominio.Jira.Repositorios;
 using Projeto.JiraAutomationService.Dominio.Jira.Servicos.Interfaces;
+using Projeto.JiraAutomationService.Dominio.WebhookGit.Entidades;
 
 namespace Projeto.JiraAutomationService.Dominio.Jira.Servicos;
 
-public class JiraServico:IJiraServico
+public class JiraServico : IJiraServico 
 {
     private readonly IJiraRepositorio jiraRepositorio;
     public JiraServico(IJiraRepositorio jiraRepositorio)
@@ -13,26 +14,28 @@ public class JiraServico:IJiraServico
         this.jiraRepositorio = jiraRepositorio;
     }
 
-    public async Task<Repositorio> InserirAsync(string nome, string idCampoReview, string idCampoRelease, string idCampoDone, CancellationToken cancellationToken = default)
+    public async Task<Board> InserirAsync(string nome, string tagJira, string urlJira, string idCampoReview, string idCampoRelease, string idCampoAguardandoRelease, string idCampoDone, CancellationToken cancellationToken = default)
     {
-        Repositorio repositorio = new(nome,idCampoReview,idCampoRelease,idCampoDone);
+        Board board = new(nome,tagJira, urlJira,idCampoReview,idCampoRelease, idCampoAguardandoRelease,idCampoDone);
         
-        await jiraRepositorio.InserirAsync(repositorio, cancellationToken);
+        await jiraRepositorio.InserirAsync(board, cancellationToken);
         
-        return repositorio;
+        return board;
     }
 
-    public async Task PullRequestMoverCardJira(string acao, PullRequest pullRequest)
+    public async Task MoverCardJira(WebhookRequisicao webhook, EventoNormalizado eventoNormalizado)
     {
-        IPullRequestRepositorio repositorio = jiraRepositorio.FactoryPullRequestRepositorio(acao);
+        IJiraEventoRepositorio repositorio = jiraRepositorio.CriarRepositorioEvento(webhook);
+
+        Board board = await jiraRepositorio.RecuperarAsync(x => x.TagJira == eventoNormalizado.TagJira );
         
-        await repositorio.MoveCardJira(pullRequest);
+        await repositorio.MoveCardJira(eventoNormalizado, board);
     }
     
-    public async Task<PullRequest> ConverteReponseBitbucket(string acao, JObject json)
+    public async Task<EventoNormalizado> ConvertePayload(WebhookRequisicao webhook, JObject json)
     {
-        IPullRequestRepositorio repositorio = jiraRepositorio.FactoryPullRequestRepositorio(acao);
+        IJiraEventoRepositorio repositorio = jiraRepositorio.CriarRepositorioEvento(webhook);
         
-        return await repositorio.ConverteReponseBitbucket(json);
+        return await repositorio.ConvertePayload(json,webhook);
     }
 }

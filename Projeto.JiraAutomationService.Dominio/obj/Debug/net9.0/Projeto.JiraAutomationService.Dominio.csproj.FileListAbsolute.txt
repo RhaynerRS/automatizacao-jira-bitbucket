@@ -23,3 +23,9 @@ C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationSer
 C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.Dominio\obj\Debug\net9.0\refint\Projeto.JiraAutomationService.Dominio.dll
 C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.Dominio\obj\Debug\net9.0\Projeto.JiraAutomationService.Dominio.pdb
 C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.Dominio\obj\Debug\net9.0\ref\Projeto.JiraAutomationService.Dominio.dll
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.Dominio\bin\Debug\net9.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.Dominio\bin\Debug\net9.0\Microsoft.Net.Http.Headers.dll
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.Dominio\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.Dominio\bin\Debug\net9.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.Dominio\bin\Debug\net9.0\Microsoft.Extensions.Features.dll
+C:\Users\Rhayner\Projetos\automatizacao-jira-bitbucket\Projeto.JiraAutomationService.Dominio\obj\Debug\net9.0\Projeto..3F4C7E00.Up2Date

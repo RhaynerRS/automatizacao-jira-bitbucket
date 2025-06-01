@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Projeto.JiraAutomationService.Dominio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc8d0f44abe8ef5efe737bf12b954c9efc029bfe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02b2d90c820412adcada45d042fcea48194357b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Projeto.JiraAutomationService.Dominio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Projeto.JiraAutomationService.Dominio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
